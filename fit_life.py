@@ -10,27 +10,25 @@ user_weight = float(input('Какой у вас вес ''(в кг)'))
 #  Запрос веса (в кг) тип float
 while True:
     try:
-        user_height = float(input('Какой у вас рост '
-        '(в метрах)'))  # Запрос роста (в метрах) тип float
+        user_height = float(input('Какой у вас рост (в метрах)'))  
+        # Запрос роста (в метрах) тип float
         break
     except ValueError:
-        print('Ошибка ввода роста используите точку '
-            'вместо запятой пример (1.75)')
-
+        print('Ошибка ввода роста используите точку вместо запятой пример (1.75)')
 
 user_bmi = round(user_weight / (user_height ** 2), 1)
 # Рассчет ИМТ (Индекс массы тела) округление 2 знака
 
 water_day = 0.03
-water_needed = round(user_weight
-                    * water_day, 2)
+water_needed = round(user_weight * water_day, 2)
 # Формула расчёта рекомендованой нормы воды в литрах округление 2 знака
 
 
 print(f'Привет {user_name}')  # Приветствие пользователя
 
 print(f'Ваш возвраст {user_age} год | Ваш ИМТ {user_bmi}')
-     
+
 print(f'Рекомендованая норма воды в день {water_needed}л')
 #  Вывод возраста, ИМТ округленный до 1 знака и нормы воды.
 print("Расчет окончен. Будьте здоровы!")
+#
