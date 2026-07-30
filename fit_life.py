@@ -19,8 +19,8 @@ while True:
 user_bmi = round(user_weight / (user_height ** 2), 1)
 # Рассчет ИМТ (Индекс массы тела) округление 2 знака
 
-water_day = 0.03
-water_needed = round(user_weight * water_day, 2)
+WATER_DAY = 0.03
+water_needed = round(user_weight * WATER_DAY, 2)
 # Формула расчёта рекомендованой нормы воды в литрах округление 2 знака
 
 
@@ -30,4 +30,5 @@ print(f'Ваш возвраст {user_age} год | Ваш ИМТ {user_bmi}')
 
 print(f'Рекомендованая норма воды в день {water_needed}л')
 #  Вывод возраста, ИМТ округленный до 1 знака и нормы воды.
-print("Расчет окончен. Будьте здоровы!")
+print('Расчет окончен. Будьте здоровы!')
+ 
